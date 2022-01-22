@@ -4,6 +4,9 @@
 #Add a crontab every 5min
 #2-59/5 * * * * cd /home/nano/freqtrade/user_data/strategies/ && sh update.sh >> update.log 2>&1
 
+#Add a crontab to clean weekly the logs
+#20 4 * * 0 cd /home/nano/freqtrade/user_data/strategies/; rm update.log; echo "update.log cleared (weekly)" >> update.log 2>&1
+
 
 
 #vars
