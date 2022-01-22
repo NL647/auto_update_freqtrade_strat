@@ -34,7 +34,8 @@ then
   rm -f "${tmp_path}"
 
 else
- 
+
+  echo "" 
   echo $dt
   echo "Files are different , Will update it with last version & reload config."
 
