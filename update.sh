@@ -44,7 +44,7 @@ else
   mv "${tmp_path}" "${local_strat}"
   
   #restart bot 
-  /home/nano/freqtrade/.env/bin/python "${client_path}" --config "${config_path}"
+  /home/nano/freqtrade/.env/bin/python "${client_path}" --config "${config_path}" reload_config
 
   #Notify telegram bot
   curl -s -X POST "${telegram_url}" -d chat_id="${chat_id}" -d text="Strategie was updated bot will restart." 
