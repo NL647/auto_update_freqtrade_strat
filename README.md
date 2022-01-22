@@ -1,1 +1,1 @@
-# auto_update_freqtrade_strat
+# auto_update_freqtrade_strategie
